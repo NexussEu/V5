@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tropical ❤️</title>
+        <meta name="description" content="Developer in : HTML , CSS , PYTHON !"/>
+        <meta property="og:title" content="Tropical ❤️"/>
+        <meta property="og:description" content="Developer in : HTML , CSS , PYTHON !"/>
+        <meta property="og:image" content="https://cdn.discordapp.com/avatars/1187453268658495519/2d4c5d423b1721550990d519c6b3f741.png?size&#x3D;1024"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <link rel="stylesheet" href="landing.css">
+        <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/avatars/1187453268658495519/2d4c5d423b1721550990d519c6b3f741.png?size&#x3D;1024">
+
+<style>
+
+@font-face {
+    font-family: custom-font;
+    src: url(https://fonts.cdnfonts.com/s/85546/Satoshi-Medium.woff);
+}
+* {
+    font-family: custom-font;
+}
+
+body {
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    color: #fff;
+    background-color: #1F2128;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imgundragable {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.customglow-username {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+    filter: drop-shadow(0 0 0.2rem #ffffff);
+}
+
+
+.username-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
+    }
+    50% {
+        box-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
+    }
+    100% {
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
+    }
+}
+
+.avatar_effect {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0 auto;
+    animation: glow 2s infinite;
+    margin-bottom: 10px;
+}
+
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+.rainbow-username {
+  font-size: 30px;
+  font-weight: bold;
+  
+  margin-right: 10px;
+  color: #ff0000;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+  /* border */
+  .border {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 39px 27px;
+      width: 100%;
+      max-width: 35.9rem;
+      border-radius: 35px;
+      box-shadow: 0 0 2.5px #ffffff;
+  }
+      
+  @media (max-width : 480px) {
+      .border {
+          left: 50%;
+          padding: 0px, 0px;
+          width: 80%;
+          max-width: 100%;
+          border-radius: 21px;
+      }
+  }
+  
+.role-icon-wrapper {
+    padding: 7px 10px 1.5px;
+    border-radius: 50px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: inline-flex;
+    place-items: center;
+    margin: 2px auto 20px;
+    background-color: rgba(247, 243, 243, 0.09);
+    border: 1px solid rgba(247, 243, 243, 0.2);
+}
+
+.icon:active {
+  transform: scale(1.2);
+}
+
+.icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.pixelated {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background: transparent url(https://i.imgur.com/EyzV6w4.png) repeat 0 0;
+}
+
+
+
+  /* icons */
+  social-icons {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  
+  .icon {
+     margin: 3px;
+     width: 35px;
+     height: 35px;
+  }
+  
+  .icon-link {
+      margin: 10px;
+      text-decoration: none;
+      text-align: center;
+  }
+  
+  .icon-link:not(:nth-child(-n+8)) {
+      display: none;
+  }
+  
+  /* social media */
+  
+  .social-media {
+      text-align: center;
+      position: relative;
+  }
+  
+  .description {
+    font-size: 17px;
+        margin: 20px 0;
+      color: #fff;
+  }
+  
+  .username {
+      color: #777777;
+      font-size: 30px;
+      margin-right: 10px;
+      
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(150, 47, 191, 0.7), 0 0 20px rgba(255, 0, 80, 0.7), 0 0 30px rgba(0, 242, 234, 0.7);
+      animation: username 13s infinite;
+  }
+  
+
+  
+  .normal-username {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+    
+    font-weight: bold;
+}
+
+  
+
+.role-icon {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.role-icon img {
+    width: 31px;
+    height: 31px;
+}
+
+
+
+  .sparky-effect {
+    background-image: url(../static/userinfo/effects/sparkle.gif);
+    display: inline-block;
+    padding: 10px;
+}
+
+
+  .glowblue-username {
+    font-size: 30px;
+    margin-right: 10px;
+    
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 60px #0000ff, 0 0 70px #0000ff, 0 0 80px #0000ff;
+}
+
+
+
+
+
+@keyframes popin {
+    0% { transform: scale(0.5) translateX(-50%); }
+    100% { transform: scale(1) translateX(-50%); }
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    font-weight: 580!important;
+    user-select: none;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    display: block;
+    z-index: 1;
+    transform: scale(0) translateX(-50%);
+    left: 50%;
+    bottom: 110%;
+    letter-spacing: .01cm!important;
+    font-size: 14.3px;
+    transition: transform 0.1s ease-out;
+}
+
+
+.role-icon:hover .tooltip,
+.role-icon:focus-within .tooltip {
+    animation: popin 0.1s ease-out forwards;
+}
+
+
+
+  
+  /* glow animation */
+  
+  @keyframes username {
+      0% {
+          text-shadow: 0px 0px 9px #5539cc;
+          opacity: 1;
+      }
+      14% {
+          text-shadow: 0px 0px 9px #5539cc;
+          opacity: 0.50;
+      }
+      20% {
+          text-shadow: 0px 0px 5px #feda75,
+          0px 0px 5px #fa7e1e,
+          0px 0px 5px #d62976,
+          0px 0px 5px #962fbf,
+          0px 0px 5px #4f5bd5;
+          opacity: 1;
+      }
+      30% {
+          text-shadow: 0px 0px 5px #229ED9;
+          opacity: 0.25;
+      }
+      40% {
+          text-shadow: 0px 0px 10px #A00003;
+          opacity: 1;
+      }
+      50% {
+          text-shadow: 0px 0px 10px #FFFC00;
+          opacity: 0.25;
+      }
+      60% {
+          text-shadow: 0px 0px 5px #0079C1;
+          opacity: 1;
+      }
+      70% {
+          text-shadow: 0px 0px 5px gray;
+          opacity: 0.25;
+      }
+      80% {
+          text-shadow: 0px 0px 5px blue;
+          opacity: 1;
+      }
+      90% {
+          text-shadow: 0px 0px 5px #E60023;
+          opacity: 0.25;
+      }
+  }
+  
+
+.videobg {
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    position: absolute
+}
+
+#vidx {
+    width: 100vw;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1
+}
+
+@keyframes fadeinout{
+    0%{
+        background-position:-500%
+    }
+    100%{
+        background-position:500%
+    }
+}
+.fadeinoutname{
+    margin-right: 10px;
+    position:relative;
+    overflow:hidden;
+    background: linear-gradient(90deg,#000,#ffffff,#ffffff,#000);
+    background-repeat:no-repeat;
+    background-size:80%;
+    animation:fadeinout 2s linear infinite;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+
+
+
+    </style>
+
+<style>
+.status {
+    color: #f23f43;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_dnd {
+    color: #f23f43;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_streaming {
+    color: #b93ff2;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_idle {
+    color: #eff23f;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_online {
+    color: #08d334;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_offline {
+    color: #858585;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.container, .discordcontainer {
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    display: inline-flex;
+    place-items: center;
+}
+
+.profile-pic, .avatarcontainer {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.info h1, .infocontainer h1 {
+    text-align: left;
+    padding: 0;
+    margin: 0 0 0 11px;
+    font-size: 19.7px;
+    max-width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 630;
+}
+
+.status, .statuscontainer_dnd, .statuscontainer_idle, .statuscontainer_online {
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.status {
+    color: #f23f43;
+}
+
+.statuscontainer_dnd {
+    color: #f23f43;
+}
+
+.statuscontainer_idle {
+    color: #eff23f;
+}
+
+.statuscontainer_online {
+    color: #08d334;
+}
+
+.infocontainer h3 {
+    text-align: left;
+    padding: 0;
+    font-size: 13.2px;
+    font-weight: 520;
+    max-width: 270px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 3.5px 6px 0 11px;
+}
+
+@media (max-width: 767px) {
+    .info h1, .infocontainer h1 {
+        max-width: 115px;
+    }
+
+    .infocontainer h3 {
+        max-width: 115px;
+    }
+}
+
+@media (min-width: 768px) {
+    .info h1, .infocontainer h1 {
+        max-width: 170px;
+    }
+
+    .infocontainer h3 {
+        max-width: 170px;
+    }
+}
+
+@media (min-width: 992px) {
+    .info h1, .infocontainer h1 {
+        max-width: 210px;
+    }
+
+    .infocontainer h3 {
+        max-width: 210px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .info h1, .infocontainer h1 {
+        max-width: 240px;
+    }
+
+    .infocontainer h3 {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 359px) {
+    .info h1, .infocontainer h1 {
+        max-width: 100px;
+    }
+
+    .infocontainer h3 {
+        max-width: 100px;
+    }
+}
+
+.emojicss {
+    margin-top: -1px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 19px;
+    width: auto
+}
+
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_double_wrapper__E_qyW {
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_other__JPn53 {
+    margin-left: 4px;
+    border-radius: 12px;
+}
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI {
+    margin-left: 10px;
+    text-align: left;
+    display: block;
+    max-width: 201px;
+    min-width: 200px;
+}
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_discord_invite__gJmuE {
+    display: flex;
+    height: 100%;
+    padding: 5px 10px;
+    place-items: center;
+    margin-top: -5px;
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_discord_invite__gJmuE img {
+    min-height: 60px;
+    max-height: 61px;
+    border-radius: 28%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI a {
+    text-decoration-color: initial;
+    background-color: rgb(21, 79, 42);
+    color: rgb(232, 230, 227);
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI a {
+    text-decoration: none;
+    background-color: #1a6334;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 7px;
+    border-radius: 8px;
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI a {
+    font-size: 12.5px!important;
+    padding: 1px 7.5px!important;
+    font-weight: 400;
+}
+#myLink {
+ cursor: pointer;
+}
+</style>
+
+<script>
+var rev = "fwd";
+
+function titlebar(val) {
+    var msg = "@Tropical ❤️";
+    var speed = 100;
+    var pos = val;
+    var le = msg.length;
+    if (rev == "fwd") {
+        if (pos < le) {
+            pos = pos + 1;
+            scroll = msg.substr(0, pos);
+            document.title = "   > " + scroll + " <";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        } else {
+            rev = "bwd";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        }
+    } else {
+        if (pos > 0) {
+            pos = pos - 1;
+            var ale = le - pos;
+            scrol = msg.substr(0, pos);
+            document.title = "   > " + scrol + " <";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        } else {
+            rev = "fwd";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        }
+    }
+}
+titlebar(1);
+
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+  <!-- bio link by cryart
+  
+  
+    height: 80.2px;
+  line 467
+   -->
+<body>      
+
+ <div id="enter">
+        <p>Tropical ❤️</p>
+</div>
+
+<div style="background-image:url(https://cdn.discordapp.com/attachments/1153438593642135653/1190387824717996153/Sweap.mp4?ex&#x3D;65a19e0d&amp;amp;is&#x3D;658f290d&amp;amp;hm&#x3D;79125a7b7b8c9a4996f8dc80b4a03d047a376cd28349bb90b970c896a0908d1f&amp;amp;); position: absolute; height: 100%; width: 100%; background-size: cover; background-position: 50%; z-index: -1;"></div>
+
+<div class="videobg">
+  <video id="vidx" loop playsinline draggable="false" autoplay muted>
+    <source src="https://cdn.discordapp.com/attachments/1153438593642135653/1190387824717996153/Sweap.mp4?ex&#x3D;65a19e0d&amp;amp;is&#x3D;658f290d&amp;amp;hm&#x3D;79125a7b7b8c9a4996f8dc80b4a03d047a376cd28349bb90b970c896a0908d1f&amp;amp;" type="video/mp4" id="video-source" /></video>
+</div>
+
+<div class="pixelated"></div>
+
+
+<div class="landing" id="landing">
+      
+<div id="particles-js"></div>
+
+<div class="border">
+  <div class="avatar">
+      <div class="avatar-container" style="display: flex; justify-content: center; align-items: center;">
+          <img src="https://cdn.discordapp.com/avatars/1187453268658495519/2d4c5d423b1721550990d519c6b3f741.png?size&#x3D;1024" alt="Avatar" class="imgundragable inline-effect avatar">
+      </div>
+  </div>
+
+
+        <div class="social-media">
+            <!-- username -->
+
+
+            <div class="username-badge">
+              <div class="username-container">
+                <h1 class="customglow-username inline-effect">Tropical ❤️</h1>
+              </div>
+            </div>
+
+
+
+
+
+
+            <!-- roles -->
+            <div class="role-icon-wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+<div id="discord" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 7px;">
+<div id="discordrpc"></div>
+<div id="discordrpcissue"></div>
+<div id="discordserver"></div>
+</div>
+
+
+            <!-- description  -->
+            <p class="fadeinoutname description" style="filter: drop-shadow(0 0 2.5px #ffffff);">
+                <span class="wrap" id="descriptionfade"></span>
+              </p>
+            
+        <div id="spotify"></div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <svg style="filter: drop-shadow(0 0 0.2rem #ffffff); margin-right: 4px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg>
+          <span style="font-size: 0.9em;">:)</span>
+        </div>
+          <!-- socials  -->
+          <div style="
+              margin: 0 .5rem;
+              color: #fff;
+              font-size: 2rem;
+              transition: all .2s ease-in-out;
+              margin-top: 10px;
+          ">
+            <a href="https://youtube.com/@mr_nuker" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#fdeded" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #fdeded);">
+                  <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+              </svg>
+            </a>
+            <a href="https://paypal.me/echtewerker" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#fdeded" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #fdeded);">
+                  <path d="M111.4 295.9c-3.5 19.2-17.4 108.7-21.5 134-.3 1.8-1 2.5-3 2.5H12.3c-7.6 0-13.1-6.6-12.1-13.9L58.8 46.6c1.5-9.6 10.1-16.9 20-16.9 152.3 0 165.1-3.7 204 11.4 60.1 23.3 65.6 79.5 44 140.3-21.5 62.6-72.5 89.5-140.1 90.3-43.4.7-69.5-7-75.3 24.2zM357.1 152c-1.8-1.3-2.5-1.8-3 1.3-2 11.4-5.1 22.5-8.8 33.6-39.9 113.8-150.5 103.9-204.5 103.9-6.1 0-10.1 3.3-10.9 9.4-22.6 140.4-27.1 169.7-27.1 169.7-1 7.1 3.5 12.9 10.6 12.9h63.5c8.6 0 15.7-6.3 17.4-14.9.7-5.4-1.1 6.1 14.4-91.3 4.6-22 14.3-19.7 29.3-19.7 71 0 126.4-28.8 142.9-112.3 6.5-34.8 4.6-71.4-23.8-92.6z"></path>
+              </svg>
+            </a>
+            <a href="https://tiktok.com/@dnp0" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fdeded" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #fdeded);">
+                  <path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"></path>
+              </svg>
+            </a>
+
+
+
+        </div>
+     </div>
+
+     </div>
+  </div>
+<audio loop="true" id="audio">
+        <source src="https://cdn.discordapp.com/attachments/1153438593642135653/1190388568665899048/MP3.mp3?ex&#x3D;65a19ebf&amp;amp;is&#x3D;658f29bf&amp;amp;hm&#x3D;76fcd6298ac70c2923f14b8228130874725b3a4b6bbf64ede8ef2db4b0c293b3&amp;amp;" type="audio/mpeg">
+    </audio>
+
+
+
+<script src="script.js"></script>
+<script src="enter.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+    var roleIconWrapper = document.querySelector('.role-icon-wrapper');
+    if (roleIconWrapper.innerHTML.trim() === '') {
+        roleIconWrapper.style.display = 'none';
+    }
+</script>
+
+<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+  <script>
+window.addEventListener("load", (event) => {
+    new cursoreffects.snowflakeCursor();
+});
+  </script>
+  
+
+
+<script>
+    var roleIconWrapper = document.querySelector('.role-icon-wrapper');
+    if (roleIconWrapper.innerHTML.trim() === '') {
+        roleIconWrapper.style.display = 'none';
+    }
+</script>
+
+<script>
+    $(document).ready(function() {
+    $('#myLink').css('cursor', 'pointer');
+});
+</script>
+<script>
+fetch('https://undefined.rip/serverinfo?link=nvAy3kwjxn')
+ .then(response => response.json())
+ .then(data => {
+    const discordServer = document.getElementById('discordserver');
+
+    const myLink = document.createElement('a');
+    myLink.setAttribute('style', 'cursor: pointer');
+    myLink.target = '_blank';
+    myLink.href = 'https://discord.gg/nvAy3kwjxn';
+
+    const doubleWrapper = document.createElement('div');
+    doubleWrapper.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_double_wrapper__E_qyW';
+    doubleWrapper.style = 'flex-basis: 50%;font-size:10px;margin-bottom: 10px;';
+
+    const other = document.createElement('div');
+    other.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_other__JPn53';
+    other.style = 'background-color: rgba(255, 255, 255, 0.09);border: 1px solid rgba(255, 255, 255, 0.106);';
+
+    const discordInvite = document.createElement('div');
+    discordInvite.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_discord_invite__gJmuE';
+
+    const avatar = document.createElement('img');
+    avatar.src = data.avatar_url;
+    discordInvite.appendChild(avatar);
+
+    const guildInfo = document.createElement('div');
+    guildInfo.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI';
+
+    const username = document.createElement('h1');
+    username.style = 'color: rgb(255, 255, 255);';
+    username.textContent = `${data.guild_name}`;
+    guildInfo.appendChild(username);
+
+    const memberCount = document.createElement('h3');
+    memberCount.style = 'color: rgba(255, 255, 255, 0.6);';
+    memberCount.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="6.5 6.5 3 3" style="font-size: 7px; color: rgb(35, 165, 89);">
+            <path fill="currentColor" d="M8 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"></path>
+        </svg> 
+        ${data.online_members.toLocaleString()} Online  
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="6.5 6.5 3 3" style="font-size: 7px; color: rgb(128, 132, 142); margin-left: 7px;">
+            <path fill="currentColor" d="M8 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"></path>
+        </svg> 
+        ${data.total_members.toLocaleString()} Members
+    `;
+    guildInfo.appendChild(memberCount);
+
+    discordInvite.appendChild(guildInfo);
+    other.appendChild(discordInvite);
+    doubleWrapper.appendChild(other);
+    myLink.appendChild(doubleWrapper);
+    discordServer.appendChild(myLink);
+ });
+</script>
+
+<script>
+let text = `Developer in : HTML , CSS , PYTHON !`;
+let formattedText = text.replace(/(\r\n|\n|\r)/g, '<br>');
+console.log(formattedText)
+
+document.getElementById('descriptionfade').innerHTML = formattedText;
+</script>
+
+
+
+
+
+    <script>
+particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 100,
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+        },
+        color: {
+          value: "#ffffff", 
+        },
+        shape: {
+          type: "circle", 
+        },
+        opacity: {
+          value: 0.8,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 5,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 2,
+            size_min: 1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: false,
+        },
+        move: {
+          enable: true,
+          speed: 1, 
+          direction: "bottom",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: false,
+          },
+          onclick: {
+            enable: false,
+          },
+          resize: true,
+        },
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 1,
+            },
+          },
+          bubble: {
+            distance: 250,
+            size: 0,
+            duration: 2,
+            opacity: 0,
+          },
+          repulse: {
+            distance: 400,
+            duration: 0.4,
+          },
+          push: {
+            particles_nb: 4,
+          },
+          remove: {
+            particles_nb: 2,
+          },
+        },
+      },
+      retina_detect: true,
+    });
+
+    </script>
+</body>
+
+</html>
